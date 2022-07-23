@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+body{
+    font-family: 'Spinnaker', sans-serif;
+    margin: 0;
+    background-color: rgb(21, 23, 39);
+    box-sizing: border-box;
+}
+
+.main-container{
+  position: relative;
+  
+}
+
+
+.text{
+  
+  color: whitesmoke;
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  margin-top: 90px;
+  
+}
+
+
+
+
+h1 {
+  font-size: 50px;
+  border-bottom: 1px solid olivedrab;
+}
+
+h2{
+  font-size: 30px;
+  transition: 0.7s;
+}
+h2:hover{
+  color:chartreuse;
+}
+
+.btn-2{
+  border: 0cm;
+  width: 150px;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 17px;
+  line-height: 0px;
+  height: 75px;
+  border-radius: 20px;
+  margin: 10px;
+  transition:  0.7s;
+  overflow: hidden;
+  border-bottom: 10px solid rgb(222, 185, 185);
+  margin-bottom: 0px;
+
+}
+
+.btn-2:hover{
+  border-bottom: 40px solid rgb(222, 185, 185);
+
+}
+
+.contactDiv{
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  right: 50px;
+  top: 0px;
+
+}
+
+.hiddencontactList{
+  opacity: 0;
+  max-height: 0px;  
+  margin-top: 0px;
+  transition: all 0.7s ; 
+
+
+}
+
+
+.contactList{
+  opacity: 1;
+  height:max-content;
+  background-color: rgb(222, 185, 185);
+  display:block;
+  transition: all 0.7s ; 
+  margin-top: 0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: 10px solid black;
+
+}
+
+ul li button{
+  position: relative;
+}
+
+.btn-2-clicked{
+  border: 0cm;
+  width: 300px;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 17px;
+  line-height: 0px;
+  height: 75px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 0px;
+  transition: 0.7s;
+  overflow: hidden;
+  border-bottom: 10px solid rgb(222, 185, 185);
+
+}
+
+.btn-2-clicked:hover{
+  border-bottom: 2px solid yellow;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 30px;
+  transition: 0.66s;
+}
+.logo:hover{
+  width: 110px;
+
+}
