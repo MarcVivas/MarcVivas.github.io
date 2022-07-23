@@ -125,6 +125,20 @@ ul li button{
   transition: 0.66s;
 }
 .logo:hover{
-  width: 110px;
+  width: 105px;
 
+}
+
+.project-image{
+    margin-top: 10px;
+    width: 500px;
+}
+
+.section-class{
+    margin-top: 100px;
+}
+
+
+h3{
+    margin-top: 40px;
 }
