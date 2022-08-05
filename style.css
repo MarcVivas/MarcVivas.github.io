@@ -132,6 +132,12 @@ ul li button{
 .project-image{
     margin-top: 10px;
     width: 500px;
+    transition: 0.4s;
+}
+
+.project-image:hover{
+    width: 1000px;
+
 }
 
 .section-class{
