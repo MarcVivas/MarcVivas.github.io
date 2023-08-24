@@ -40,12 +40,44 @@ body {
     min-height: 100vh;
 }
 
+#sec1{
+    background: linear-gradient(270deg, #0d0d0d, #383838);
+    background-size: 600% 600%;
+
+    border-radius: 9px;
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    -o-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+
 #sec1 {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 0px 90px;
+    padding: 10px 90px;
 }
 
 h1 {
@@ -66,18 +98,29 @@ h1 {
 }
 
 button {
+    display: inline-block;
     font-family: "Inter", sans-serif;
     border: none;
-    background-color: var(--onyx);
+    background-color: #383838;
     color: var(--faint-white);
     border-radius: 9px;
     padding: 16px 32px;
     font-size: 1.02rem;
     cursor: pointer;
+    transition: 0.2s; 
+    outline: 0;
 }
+
+button:hover{
+    transform: translateY(-4px);
+    background-color: var(--light-blue);
+    color: var(--faint-white);
+}
+
 
 #left {
     flex: 1;
+    align-self: center;
 }
 
 .cards {
@@ -225,6 +268,13 @@ strong {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+    transition: 0.2s ease-in-out;
+
+}
+
+.homeBtn:hover {
+    background-color: transparent;
+    transform: scale(1.15);
 }
 
 .homeBtn img {
@@ -412,6 +462,12 @@ strong {
 
 .formContainer button {
     background-color: var(--black);
+}
+
+.formContainer button:hover {
+    transform: translateY(-4px);
+    background-color: var(--light-blue);
+    color: var(--faint-white);
 }
 
 
