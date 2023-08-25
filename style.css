@@ -41,36 +41,13 @@ body {
 }
 
 #sec1{
-    background: linear-gradient(270deg, #0d0d0d, #383838);
-    background-size: 600% 600%;
+
 
     border-radius: 9px;
-    -webkit-animation: AnimationName 12s ease infinite;
-    -moz-animation: AnimationName 12s ease infinite;
-    -o-animation: AnimationName 12s ease infinite;
-    animation: AnimationName 12s ease infinite;
+
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:15% 0%}
-    50%{background-position:86% 100%}
-    100%{background-position:15% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:15% 0%}
-    50%{background-position:86% 100%}
-    100%{background-position:15% 0%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:15% 0%}
-    50%{background-position:86% 100%}
-    100%{background-position:15% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:15% 0%}
-    50%{background-position:86% 100%}
-    100%{background-position:15% 0%}
-}
+
 
 #sec1 {
     flex: 1;
@@ -200,19 +177,19 @@ strong {
   
   @keyframes cardBloom {
     0%, 100% {
-      box-shadow: 0px 0px 25px 0px #00b4d8;
+      box-shadow: 0px 0px 35px 0px #00b4d8;
     }
   
     25% {
-      box-shadow: 0px 0px 25px 0px #48cae4;
+      box-shadow: 0px 0px 35px 0px #48cae4;
     }
     
     50% {
-      box-shadow: 0px 0px 25px 0px #90e0ef;
+      box-shadow: 0px 0px 35px 0px #90e0ef;
     }
   
     75% {
-      box-shadow: 0px 0px 25px 0px #ade8f4;
+      box-shadow: 0px 0px 35px 0px #ade8f4;
     }
   }
 
@@ -505,5 +482,46 @@ form {
     margin: 0 auto;
     box-sizing: border-box;
 }
+
+#sec1 {
+ 
+
+    animation: fade-in 2s forwards;
+    opacity: 0;
+    transform: translateY(50vh);
+    transform: scale(0.5);
+}
+
+#about, #tech-stack-sec, #projects-sec, #contact-sec {
+    animation: fade-in 2s forwards;
+    opacity: 0;
+    transform: translateY(50vh);
+    transform: scale(0.5);
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(50vh);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        transform: scale(1.0);
+    }
+}
+
+/*
+body {
+    background-image: url(images/xiaomi-pad-stock-3840x3840-11667.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*/
+
+
 
 
